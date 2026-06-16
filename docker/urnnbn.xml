@@ -1,0 +1,33 @@
+<Context>
+	<Parameter name="serviceName" value="diva" override="false" />
+	
+
+	<Parameter name="fedoraArchiveURL"
+		value="http://alvin-fedora:8080/fcrepo/rest/" override="false" />
+
+	<Parameter name="storageType" value="memory" override="false" />
+
+	<Parameter name="storageOnDiskBasePath"
+		value="/mnt/data/basicstorage/" override="false" />
+
+	<Parameter name="coraDatabaseLookupName"
+		value="java:/comp/env/jdbc/postgres" override="false" />
+
+	<Resource name="jdbc/postgres" auth="Container"
+		type="javax.sql.DataSource" driverClassName="org.postgresql.Driver"
+		url="jdbc:postgresql://alvin-postgresql:5432/alvin"
+		username="alvin" password="alvin" maxTotal="20000" maxIdle="10"
+		maxWaitMillis="-1" />
+	
+	<Parameter name="doNotCache" value="false" override="false" />
+	
+	<Parameter name="imageServerUrl" value="http://alvin-iipimageserver:80/iiif/" override="false" />
+	
+	<Parameter name="rabbitMqHostname" value="alvin-rabbitmq" override="false" />
+	<Parameter name="rabbitMqPort" value="5672" override="false" />
+	<Parameter name="rabbitMqVirtualHost" value="/" override="false" />
+	<Parameter name="rabbitMqImageExchange" value="imageConverterExchange" override="false" />
+	<Parameter name="rabbitMqPdfExchange" value="pdfConverterExchange" override="false" />
+	<Parameter name="rabbitMqRoutingKey" value="" override="false" />
+	<Parameter name="rabbitMqDataExchange" value="dataChangedExchange" override="false"/>
+</Context>
