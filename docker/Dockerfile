@@ -1,7 +1,6 @@
 ARG CORA_DOCKER_VERSION
 FROM cora-docker-tomcat:${CORA_DOCKER_VERSION}
 
-#COPY /files/ /usr/local/tomcat/webapps
 COPY /files/ /tmp
 
 COPY /urnnbn*.war /usr/local/tomcat/webapps/urn-nbn.war
