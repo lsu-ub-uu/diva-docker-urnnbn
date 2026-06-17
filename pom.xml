@@ -34,7 +34,7 @@
 		<cora-docker-tomcat.version>2.7.0</cora-docker-tomcat.version>
 		<!-- Override property so docker-build profile activates in this module -->
 		<docker.build.activate>true</docker.build.activate>
-		<urnnbn.version>0.1-SNAPSHOT</urnnbn.version>
+		<urnnbn.version>0.1.0</urnnbn.version>
 	</properties>
 
 	<scm>
