@@ -38,11 +38,11 @@
 	</properties>
 
 	<scm>
-		<connection>scm:git:https://github.com/lsu-ub-uu/systemone-docker.git</connection>
-		<developerConnection>scm:git:https://github.com/lsu-ub-uu/systemone-docker.git</developerConnection>
-		<url>https://github.com/lsu-ub-uu/systemone-docker.git</url>
-	  <tag>HEAD</tag>
-  </scm>
+		<connection>scm:git:https://github.com/lsu-ub-uu/diva-docker-urnnbn.git</connection>
+		<developerConnection>scm:git:https://github.com/lsu-ub-uu/diva-docker-urnnbn.git</developerConnection>
+		<url>https://github.com/lsu-ub-uu/diva-docker-urnnbn.git</url>
+		<tag>HEAD</tag>
+	</scm>
 
 	<dependencies>
 		<dependency>
